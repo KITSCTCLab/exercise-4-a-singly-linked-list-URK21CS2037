@@ -2,7 +2,16 @@ from typing import Optional
 
 
 class Node:
+    """
+    This class describes Node objects to act as elements of the LinkedList
+    Attributes:
+        -> data - stored associated data
+        -> next - link to next node
+    """
     def __init__(self,data=None,next=None):
+         """
+        Initialises the Node with given attributes
+        """
         self.data = data
         self.next = next
 
@@ -20,7 +29,7 @@ class LinkedList:
         Insert node at end of the list
         :param data: integer data that will be used to create a node
         """
-         new = Node(data, None)
+        new = Node(data, None)
         current = self.head
         if current is None:
             self.head = new
