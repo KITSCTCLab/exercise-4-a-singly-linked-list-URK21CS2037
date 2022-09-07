@@ -54,7 +54,7 @@ class Solution:
             sum_list.insert_at_end(digit)
         return sum_list
         
-     def get_num(self, l: Optional[LinkedList]) -> int:
+     def get_num(self,l:Optional[LinkedList])->int:
         curr = l.head
         if curr is None:
             return 0
