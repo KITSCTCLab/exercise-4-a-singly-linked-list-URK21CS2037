@@ -9,9 +9,6 @@ class Node:
         -> next - link to next node
     """
     def __init__(self,data=None,next=None):
-         """
-        Initialises the Node with given attributes
-        """
         self.data = data
         self.next = next
 
