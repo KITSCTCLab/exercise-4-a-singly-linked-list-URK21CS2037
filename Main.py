@@ -47,16 +47,7 @@ class LinkedList:
         print(elements)
 
 class Solution:
-       """
-    Class implementing functions to add numbers in a LinkedListT
-    
-    """
     def addTwoNumbers(self, first_list: Optional[LinkedList], second_list: Optional[LinkedList]) -> Optional[LinkedList]:
-        """
-        :param first_list: Linkedlist with non-negative integers
-        :param second_list: Linkedlist with non-negative integers
-        :return: returns the sum as a linked list
-        """
         result = self.get_num(first_list) + self.get_num(second_list)
         sum_list = LinkedList()
         for digit in list(map(int, str(result)[::-1])):
