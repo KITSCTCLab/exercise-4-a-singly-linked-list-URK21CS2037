@@ -55,10 +55,6 @@ class Solution:
         return sum_list
         
      def get_num(self, l: Optional[LinkedList]) -> int:
-      """
-        :param l: LinkedList with non-negative integers
-        :return: returns digits of the list as a single integer
-      """
         curr = l.head
         if curr is None:
             return 0
